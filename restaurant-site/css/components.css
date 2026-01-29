@@ -192,7 +192,6 @@
         transform: translateY(0);
     }
 }
-
 .animate-on-scroll {
     opacity: 0;
     transform: translateY(30px);

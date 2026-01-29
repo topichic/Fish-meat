@@ -10,14 +10,13 @@ document.addEventListener('DOMContentLoaded', function() {
         navToggle.addEventListener('click', function() {
             navList.classList.toggle('active');
             this.classList.toggle('active');
-            
+
             // Анимация гамбургера
             const hamburger = this.querySelector('.hamburger');
             hamburger.classList.toggle('active');
         });
     }
-
-    // Закрытие меню при клике на ссылку
+    
     document.querySelectorAll('.nav__link').forEach(link => {
         link.addEventListener('click', function() {
             if (navList.classList.contains('active')) {

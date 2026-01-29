@@ -1,6 +1,4 @@
-/* responsive.css - адаптивный дизайн */
 
-/* Планшеты (768px и меньше) */
 @media (max-width: 768px) {
     html {
         font-size: 14px;
@@ -9,7 +7,7 @@
     .section-title {
         font-size: 2rem;
     }
-    
+
     .page-title {
         font-size: 2.5rem;
     }
