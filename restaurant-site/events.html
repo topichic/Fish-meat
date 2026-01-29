@@ -1,19 +1,245 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    
-    <title>События | La Bella Vita</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>События и акции | La Bella Vita</title>
+    <!-- Стили как на главной -->
 </head>
 <body>
-    <header class="header"><!-- Шапка --></header>
+    <header class="header">
+        <!-- Шапка как на главной -->
+    </header>
+
     <main class="main-content">
-        <div class="container">
-            <h1 class="page-title">События и акции</h1>
-            <!-- События будут добавлены Алексеем -->
-            <div id="eventsContent"></div>
-        </div>
+        <!-- Hero секция -->
+        <section class="events-hero">
+            <div class="container">
+                <h1 class="page-title">События и акции</h1>
+                <p class="page-subtitle">Откройте для себя уникальные мероприятия и специальные предложения</p>
+            </div>
+        </section>
+
+        <!-- Календарь событий -->
+        <section class="calendar-section">
+            <div class="container">
+                <h2 class="section-title">Календарь событий</h2>
+                
+                <div class="calendar-controls">
+                    <button class="calendar-btn" id="prevMonth">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <h3 class="current-month" id="currentMonth">Март 2024</h3>
+                    <button class="calendar-btn" id="nextMonth">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="calendar">
+                    <div class="calendar-header">
+                        <div class="calendar-day">Пн</div>
+                        <div class="calendar-day">Вт</div>
+                        <div class="calendar-day">Ср</div>
+                        <div class="calendar-day">Чт</div>
+                        <div class="calendar-day">Пт</div>
+                        <div class="calendar-day">Сб</div>
+                        <div class="calendar-day">Вс</div>
+                    </div>
+                    <div class="calendar-grid" id="calendarGrid">
+                        <!-- Календарь будет генерироваться JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Актуальные события -->
+        <section class="upcoming-events">
+            <div class="container">
+                <h2 class="section-title">Ближайшие события</h2>
+                
+                <div class="events-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            <div class="date-day">15</div>
+                            <div class="date-month">Март</div>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Дегустация итальянских вин</h3>
+                            <div class="event-info">
+                                <span class="event-time">
+                                    <i class="fas fa-clock"></i> 19:00 - 22:00
+                                </span>
+                                <span class="event-price">
+                                    <i class="fas fa-tag"></i> 2500 ₽
+                                </span>
+                            </div>
+                            <p>Уникальная возможность попробовать редкие итальянские вина 
+                               в сопровождении нашего сомелье Марии Феррари.</p>
+                            <a href="#wine-tasting" class="btn btn--small">Подробнее</a>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            <div class="date-day">22</div>
+                            <div class="date-month">Март</div>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Мастер-класс по пасте от шефа</h3>
+                            <div class="event-info">
+                                <span class="event-time">
+                                    <i class="fas fa-clock"></i> 14:00 - 17:00
+                                </span>
+                                <span class="event-price">
+                                    <i class="fas fa-tag"></i> 3500 ₽
+                                </span>
+                            </div>
+                            <p>Шеф-повар Антонио Росси научит вас готовить настоящую 
+                               итальянскую пасту по семейным рецептам.</p>
+                            <a href="#pasta-masterclass" class="btn btn--small">Подробнее</a>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            <div class="date-day">29</div>
+                            <div class="date-month">Март</div>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Живая музыка: Итальянские классики</h3>
+                            <div class="event-info">
+                                <span class="event-time">
+                                    <i class="fas fa-clock"></i> 20:00 - 23:00
+                                </span>
+                                <span class="event-price">
+                                    <i class="fas fa-tag"></i> Бесплатно
+                                </span>
+                            </div>
+                            <p>Каждую пятницу живая музыка в исполнении талантливых 
+                               музыкантов. Итальянские хиты и классика.</p>
+                            <a href="#live-music" class="btn btn--small">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Акции -->
+        <section class="promotions">
+            <div class="container">
+                <h2 class="section-title">Текущие акции</h2>
+                
+                <div class="promotions-grid">
+                    <div class="promotion-card">
+                        <div class="promotion-badge">Спецпредложение</div>
+                        <div class="promotion-content">
+                            <h3>Бизнес-ланч</h3>
+                            <p class="promotion-period">Пн-Пт, 12:00-16:00</p>
+                            <div class="promotion-description">
+                                <p>Комплексный обед из трех блюд + напиток</p>
+                                <ul>
+                                    <li>Салат или суп на выбор</li>
+                                    <li>Основное блюдо из специального меню</li>
+                                    <li>Десерт или кофе</li>
+                                </ul>
+                            </div>
+                            <div class="promotion-price">
+                                <span class="old-price">890 ₽</span>
+                                <span class="new-price">690 ₽</span>
+                            </div>
+                            <button class="btn btn--primary">Забронировать</button>
+                        </div>
+                    </div>
+                    
+                    <div class="promotion-card">
+                        <div class="promotion-badge">Для двоих</div>
+                        <div class="promotion-content">
+                            <h3>Романтический ужин</h3>
+                            <p class="promotion-period">Ежедневно, 18:00-23:00</p>
+                            <div class="promotion-description">
+                                <p>Специальное меню для влюбленных пар</p>
+                                <ul>
+                                    <li>Шампанское в подарок</li>
+                                    <li>5 блюд от шеф-повара</li>
+                                    <li>Десерт на двоих</li>
+                                </ul>
+                            </div>
+                            <div class="promotion-price">
+                                <span class="new-price">4,900 ₽</span>
+                            </div>
+                            <button class="btn btn--primary">Забронировать</button>
+                        </div>
+                    </div>
+                    
+                    <div class="promotion-card">
+                        <div class="promotion-badge">Дни рождения</div>
+                        <div class="promotion-content">
+                            <h3>Имениннику — десерт в подарок!</h3>
+                            <p class="promotion-period">При предъявлении документа</p>
+                            <div class="promotion-description">
+                                <p>Отмечайте день рождения у нас и получите:</p>
+                                <ul>
+                                    <li>Фирменный десерт в подарок</li>
+                                    <li>Шарик просекко для компании</li>
+                                    <li>Праздничное украшение стола</li>
+                                </ul>
+                            </div>
+                            <button class="btn btn--primary">Забронировать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Программа лояльности -->
+        <section class="loyalty-program">
+            <div class="container">
+                <div class="loyalty-content">
+                    <div class="loyalty-text">
+                        <h2 class="section-title">Программа лояльности</h2>
+                        <p>Станьте участником нашей программы и получайте специальные привилегии:</p>
+                        
+                        <div class="loyalty-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-gift"></i>
+                                <h4>Приветственный бонус</h4>
+                                <p>Скидка 15% на первый заказ</p>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-star"></i>
+                                <h4>Накопительные балы</h4>
+                                <p>1 балл = 1 рубль. Обменивайте на блюда</p>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-birthday-cake"></i>
+                                <h4>Специальные предложения</h4>
+                                <p>Эксклюзивные акции для участников</p>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-percent"></i>
+                                <h4>Скидка в день рождения</h4>
+                                <p>25% скидка в течение недели</p>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn--large" id="joinLoyalty">
+                            <i class="fas fa-crown"></i> Присоединиться к программе
+                        </button>
+                    </div>
+                    
+                    <div class="loyalty-image">
+                        <img src="images/loyalty-card.png" alt="Карта лояльности">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="footer"><!-- Подвал --></footer>
+
+    <footer class="footer">
+        <!-- Подвал как на главной -->
+    </footer>
+
+    <script src="js/events-calendar.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
