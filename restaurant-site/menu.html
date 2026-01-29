@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню | La Bella Vita</title>
+    <!-- Такие же стили как в index.html -->
+</head>
+<body>
+    <header class="header">
+        <!-- Такая же шапка как в index.html -->
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <h1 class="page-title">Наше меню</h1>
+            
+            <!-- Фильтры категорий -->
+            <div class="menu-filters" id="menuFilters">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="appetizers">Закуски</button>
+                <button class="filter-btn" data-filter="main">Основные блюда</button>
+                <button class="filter-btn" data-filter="desserts">Десерты</button>
+                <button class="filter-btn" data-filter="drinks">Напитки</button>
+            </div>
+            
+            <!-- Сетка блюд -->
+            <div class="menu-grid" id="menuGrid">
+                <!-- Карточки блюд будут добавлены JavaScript -->
+            </div>
+            
+            <!-- Шаблон карточки блюда -->
+            <template id="dishTemplate">
+                <div class="dish-card" data-category="">
+                    <div class="dish-card__image">
+                        <img src="" alt="" class="dish-img">
+                        <span class="dish-price"></span>
+                    </div>
+                    <div class="dish-card__content">
+                        <h3 class="dish-title"></h3>
+                        <p class="dish-description"></p>
+                        <div class="dish-tags"></div>
+                        <button class="btn btn--small add-to-cart">Добавить</button>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- Такой же подвал как в index.html -->
+    </footer>
+
+    <script src="js/menu-filter.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
