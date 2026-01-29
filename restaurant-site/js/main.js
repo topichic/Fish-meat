@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
             hamburger.classList.toggle('active');
         });
     }
-    
+
     document.querySelectorAll('.nav__link').forEach(link => {
         link.addEventListener('click', function() {
             if (navList.classList.contains('active')) {
@@ -585,4 +585,190 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = 'reservation.html';
         });
     }
+});
+// Мобильное меню
+const navToggle = document.getElementById('navToggle');
+const mainNav = document.getElementById('mainNav');
+const navList = document.querySelector('.nav__list');
+
+if (navToggle) {
+    navToggle.addEventListener('click', function() {
+        navList.classList.toggle('active');
+        this.classList.toggle('active');
+        
+        // Анимация гамбургера
+        const hamburger = this.querySelector('.hamburger');
+        hamburger.classList.toggle('active');
+    });
+}
+
+// Закрытие меню при клике на ссылку
+document.querySelectorAll('.nav__link').forEach(link => {
+    link.addEventListener('click', function() {
+        if (navList.classList.contains('active')) {
+            navList.classList.remove('active');
+            navToggle.classList.remove('active');
+            navToggle.querySelector('.hamburger').classList.remove('active');
+        }
+    });
+});
+
+// Активная страница в навигации
+function setActiveNavLink() {
+    const currentPage = window.location.pathname.split('/').pop();
+    const navLinks = document.querySelectorAll('.nav__link');
+    
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === currentPage) {
+            link.classList.add('active');
+        }
+    });
+}
+
+// Кнопка "Наверх"
+const backToTop = document.getElementById('backToTop');
+if (backToTop) {
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    });
+    
+    backToTop.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+// Форма рассылки
+const newsletterForm = document.getElementById('newsletterForm');
+if (newsletterForm) {
+    newsletterForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = this.querySelector('input[type="email"]').value;
+        
+        // Имитация отправки
+        this.innerHTML = `
+            <div class="success-message">
+                <i class="fas fa-check-circle"></i>
+                <p>Спасибо за подписку! Проверьте ваш email для подтверждения.</p>
+            </div>
+        `;
+        
+        // Сохранить в localStorage
+        localStorage.setItem('newsletterSubscribed', 'true');
+        localStorage.setItem('subscribedEmail', email);
+    });
+}
+
+// Поиск на 404 странице
+const searchForm = document.getElementById('searchForm');
+if (searchForm) {
+    searchForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const query = this.querySelector('input').value.toLowerCase();
+        
+        // Простой поиск по страницам
+        const pages = [
+            { title: 'Меню', url: 'menu.html', keywords: ['меню', 'блюда', 'еда', 'паста', 'пицца'] },
+            { title: 'Бронирование', url: 'reservation.html', keywords: ['бронирование', 'стол', 'забронировать', 'резерв'] },
+            { title: 'Контакты', url: 'contact.html', keywords: ['контакты', 'адрес', 'телефон', 'как добраться'] },
+            { title: 'О нас', url: 'about.html', keywords: ['о нас', 'история', 'команда', 'шеф'] },
+            { title: 'События', url: 'events.html', keywords: ['события', 'акции', 'мероприятия', 'дегустация'] }
+        ];
+        
+        let foundPages = pages.filter(page => 
+            page.keywords.some(keyword => keyword.includes(query)) ||
+            page.title.toLowerCase().includes(query)
+        );
+        
+        if (foundPages.length > 0) {
+            // Показать результаты
+            const resultsHTML = foundPages.map(page => `
+                <a href="${page.url}" class="search-result">
+                    <i class="fas fa-arrow-right"></i>
+                    <span>${page.title}</span>
+                </a>
+            `).join('');
+            
+            const resultsContainer = document.createElement('div');
+            resultsContainer.className = 'search-results';
+            resultsContainer.innerHTML = `
+                <h4>Найденные страницы:</h4>
+                ${resultsHTML}
+            `;
+            
+            const existingResults = document.querySelector('.search-results');
+            if (existingResults) {
+                existingResults.remove();
+            }
+            
+            searchForm.parentNode.appendChild(resultsContainer);
+        } else {
+            alert('По вашему запросу ничего не найдено. Попробуйте другие ключевые слова.');
+        }
+    });
+}
+
+// Обновление текущего дня в часах работы
+function updateCurrentDay() {
+    const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+    const today = new Date().getDay(); // 0 = Sunday, 1 = Monday, etc.
+    
+    days.forEach((day, index) => {
+        const element = document.getElementById(day);
+        if (element && index === today) {
+            element.classList.add('current-day');
+        }
+    });
+}
+
+// Инициализация
+document.addEventListener('DOMContentLoaded', function() {
+    setActiveNavLink();
+    updateCurrentDay();
+    
+    // Плавная прокрутка для якорей
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href !== '#') {
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }
+        });
+    });
+    
+    // Анимация появления элементов при скролле
+    const animateOnScroll = function() {
+        const elements = document.querySelectorAll('.animate-on-scroll');
+        
+        elements.forEach(element => {
+            const elementPosition = element.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.3;
+            
+            if (elementPosition < screenPosition) {
+                element.classList.add('animated');
+            }
+        });
+    };
+    
+    // Добавить класс для анимации
+    document.querySelectorAll('.special-card, .benefit-card, .testimonial-slide').forEach(el => {
+        el.classList.add('animate-on-scroll');
+    });
+    
+    window.addEventListener('scroll', animateOnScroll);
+    animateOnScroll(); // Запустить сразу для видимых элементов
 });
