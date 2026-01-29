@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Bella Vita | Итальянский ресторан</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo">
+                    <h1 class="logo__text">La Bella <span class="logo__accent">Vita</span></h1>
+                    <p class="logo__subtitle">Итальянский ресторан</p>
+                </a>
+                
+                <!-- Навигация -->
+                <nav class="nav" id="mainNav">
+                    <button class="nav-toggle" aria-label="Меню" id="navToggle">
+                        <span class="hamburger"></span>
+                    </button>
+                    
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link active">Главная</a></li>
+                        <li class="nav__item"><a href="menu.html" class="nav__link">Меню</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">О нас</a></li>
+                        <li class="nav__item"><a href="reservation.html" class="nav__link">Бронирование</a></li>
+                        <li class="nav__item"><a href="events.html" class="nav__link">События</a></li>
+                        <li class="nav__item"><a href="contact.html" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header__actions">
+                    <a href="tel:+79991234567" class="phone">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (999) 123-45-67</span>
+                    </a>
+                    <a href="reservation.html" class="btn btn--primary">Забронировать стол</a>
+                </div>
+            </div>
+        </div>
+    </header>
+<main class="main-content">
+    <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h2 class="hero__title">Насладитесь вкусом настоящей Италии</h2>
+                    <p class="hero__subtitle">Авторская кухня от шеф-повара Антонио Росси</p>
+                    <a href="menu.html" class="btn btn--large">Смотреть меню</a>
+                </div>
+            </div>
+        </section>
+        section class="specials">
+            <div class="container">
+                <h2 class="section-title">Специальные предложения</h2>
+                <div class="specials__grid">
+                     </div>
+            </div>
+        </section>
+        <section class="about-preview">
+            <div class="container">
+                <div class="about-preview__content">
+                    <h2 class="section-title">Наша история</h2>
+                    <p>La Bella Vita открылся в 2010 году с миссией привнести настоящий итальянский дух в Москву.</p>
+                    <a href="about.html" class="btn btn--secondary">Узнать больше</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <h3 class="footer__title">La Bella Vita</h3>
+                    <p>Итальянский ресторан с авторской кухней и уютной атмосферой.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer__col">
+                    <h3 class="footer__title">Часы работы</h3>
+                    <ul class="footer__list">
+                        <li>Пн-Чт: 12:00 - 23:00</li>
+                        <li>Пт-Сб: 12:00 - 00:00</li>
+                        <li>Вс: 12:00 - 22:00</li>
+                    </ul>
+                </div>
+                
+                <div class="footer__col">
+                    <h3 class="footer__title">Контакты</h3>
+                    <ul class="footer__list">
+                        <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Тверская, 15</li>
+                        <li><i class="fas fa-phone"></i> +7 (999) 123-45-67</li>
+                        <li><i class="fas fa-envelope"></i> info@labellavita.ru</li>
+                    </ul>
+                </div>
+                
+                <div class="footer__col">
+                    <h3 class="footer__title">Быстрые ссылки</h3>
+                    <ul class="footer__list">
+                        <li><a href="menu.html">Меню</a></li>
+                        <li><a href="reservation.html">Бронирование</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2024 La Bella Vita. Все права защищены.</p>
+                <p><a href="privacy.html">Политика конфиденциальности</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Скрипты -->
+    <script src="js/main.js"></script>
+</body>
+</html>
