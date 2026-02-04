@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish & Meat Studio - Умные боты для бизнеса</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Навигация -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-fish"></i>
+                        <i class="fas fa-drumstick-bite"></i>
+                    </div>
+                    <span class="logo-text">Fish&Meat</span>
+                    <span class="logo-sub">Studio</span>
+                </a>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Меню навигации">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="team.html">Команда</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li><a href="blog.html" class="blog-link">Блог</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Герой секция -->
+    <section class="hero" aria-label="Главная секция">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="fish-text">Fish</span> & <span class="meat-text">Meat</span>
+                    <span class="studio-text">Studio</span>
+                </h1>
+                <p class="hero-subtitle">Создаем Telegram-ботов, которые работают как отлаженный механизм</p>
+                <p class="hero-description">Мы сочетаем <span class="highlight-blue">глубину</span> морских технологий с <span class="highlight-red">энергией</span> наземных решений</p>
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fas fa-robot"></i> Заказать бота
+                    </a>
+                    <a href="portfolio.html" class="btn btn-secondary">
+                        <i class="fas fa-eye"></i> Наши работы
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">ботов создано</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3 года</span>
+                        <span class="stat-label">на рынке</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">клиентов довольны</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="bot-illustration">
+                    <div class="bot-body">
+                        <i class="fab fa-telegram telegram-icon" aria-hidden="true"></i>
+                        <div class="bot-eye left-eye"></div>
+                        <div class="bot-eye right-eye"></div>
+                        <div class="bot-antenna"></div>
+                    </div>
+                    <div class="wave wave1"></div>
+                    <div class="wave wave2"></div>
+                    <div class="meat-chunk"></div>
+                    <div class="fish-icon"><i class="fas fa-fish" aria-hidden="true"></i></div>
+                    <div class="code-bubble">
+                        <pre><code>if (success) {
+    celebrate();
+} else {
+    improve();
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="features" aria-label="Наши преимущества">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают нас?</h2>
+            <p class="section-subtitle">Сочетание двух подходов - глубокий анализ и быстрое внедрение</p>
+            
+            <div class="features-grid">
+                <div class="feature-card fish-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Глубина анализа</h3>
+                    <p>Как рыба погружается в океан данных, мы погружаемся в ваш бизнес-процесс, выявляя все нюансы</p>
+                    <a href="#" class="feature-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="feature-card meat-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Энергия внедрения</h3>
+                    <p>Быстрое и эффективное внедрение решений, как питательные белки дают энергию организму</p>
+                    <a href="#" class="feature-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="feature-card hybrid-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Гибридный подход</h3>
+                    <p>Сочетаем аналитику "рыбы" с динамикой "мяса" для идеального результата в каждом проекте</p>
+                    <a href="#" class="feature-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Технологии -->
+    <section class="technologies" aria-label="Используемые технологии">
+        <div class="container">
+            <h2 class="section-title">Технологии которые мы используем</h2>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-node-js"></i>
+                    <span>Node.js</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-database"></i>
+                    <span>PostgreSQL</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-telegram"></i>
+                    <span>Telegram API</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-aws"></i>
+                    <span>AWS</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-docker"></i>
+                    <span>Docker</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-fish"></i>
+                            <i class="fas fa-drumstick-bite"></i>
+                        </div>
+                        <span class="logo-text">Fish&Meat</span>
+                        <span class="logo-sub">Studio</span>
+                    </a>
+                    <p class="footer-tagline">Глубина анализа. Энергия реализации.</p>
+                    <p class="footer-description">Создаем умных Telegram-ботов для вашего бизнеса с 2021 года</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="portfolio.html">Портфолио</a></li>
+                        <li><a href="team.html">Команда</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h4>Услуги</h4>
+                    <ul>
+                        <li><a href="services.html#analytics">Аналитические боты</a></li>
+                        <li><a href="services.html#automation">Боты-автоматизаторы</a></li>
+                        <li><a href="services.html#ecommerce">Торговые боты</a></li>
+                        <li><a href="services.html#support">Поддержка</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Контакты</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p class="contact-label">Email</p>
+                            <a href="mailto:info@fishmeat.studio">info@fishmeat.studio</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <p class="contact-label">Телефон</p>
+                            <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p class="contact-label">Адрес</p>
+                            <p>г. Москва, ул. Разработчиков, 15</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://t.me/fishmeatstudio" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://github.com/fishmeatstudio" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://vk.com/fishmeatstudio" aria-label="VK">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@fishmeatstudio" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fish & Meat Studio. Все права защищены.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Политика конфиденциальности</a>
+                    <a href="terms.html">Пользовательское соглашение</a>
+                    <a href="sitemap.xml">Карта сайта</a>
+                </div>
+                <p class="made-with">
+                    Создано с <i class="fas fa-heart heart-icon" aria-hidden="true"></i> для вашего бизнеса
+                    <span class="version">v2.0.1</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка наверх -->
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/menu.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
