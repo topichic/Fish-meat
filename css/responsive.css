@@ -1,0 +1,596 @@
+/* Адаптивные стили */
+
+/* Планшеты (768px - 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 30px;
+    }
+    
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    
+    .hero .container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .hero-content {
+        order: 2;
+    }
+    
+    .hero-image {
+        order: 1;
+    }
+    
+    .bot-illustration {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .team-members {
+        grid-template-columns: 1fr;
+    }
+    
+    .process-flow {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .flow-arrow {
+        transform: rotate(90deg);
+    }
+}
+
+/* Мобильные устройства (480px - 767px) */
+@media (max-width: 767px) {
+    html {
+        font-size: 14px;
+    }
+    
+    .container {
+        padding: 0 20px;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    /* Навигация */
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        transition: right 0.3s ease;
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+    
+    .nav-menu.active {
+        right: 0;
+    }
+    
+    .nav-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .nav-toggle.active i::before {
+        content: '\f00d';
+    }
+    
+    /* Затемнение фона при открытом меню */
+    .nav-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+    
+    .nav-overlay.active {
+        display: block;
+    }
+    
+    /* Герой секция */
+    .hero {
+        padding: 140px 0 60px;
+    }
+    
+    .hero-title {
+        font-size: 2.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.3rem;
+    }
+    
+    .bot-illustration {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .bot-body {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .telegram-icon {
+        font-size: 3rem;
+    }
+    
+    .wave1 {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .wave2 {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    /* Особенности */
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .feature-card {
+        padding: 30px 20px;
+    }
+    
+    /* Технологии */
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    /* Услуги */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-card {
+        margin-bottom: 30px;
+    }
+    
+    .services-tabs {
+        overflow-x: auto;
+        padding-bottom: 10px;
+        justify-content: flex-start;
+    }
+    
+    .tab-btn {
+        flex-shrink: 0;
+    }
+    
+    /* Процесс работы */
+    .process-timeline {
+        grid-template-columns: 1fr;
+    }
+    
+    .process-timeline::before {
+        display: none;
+    }
+    
+    .process-step {
+        text-align: left;
+    }
+    
+    .step-number {
+        margin: 0 0 20px 0;
+    }
+    
+    /* Команда */
+    .team-member {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .member-photo {
+        width: 100%;
+    }
+    
+    .member-info {
+        width: 100%;
+    }
+    
+    .member-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Портфолио */
+    .portfolio-filters {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .filter-buttons {
+        overflow-x: auto;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+    
+    .filter-btn {
+        flex-shrink: 0;
+    }
+    
+    .filter-search {
+        width: 100%;
+    }
+    
+    .portfolio-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .portfolio-card {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Контакты */
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .contact-form {
+        padding: 30px 20px;
+    }
+    
+    /* Футер */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .footer-logo {
+        text-align: center;
+    }
+    
+    .footer-links,
+    .footer-services,
+    .footer-contact {
+        text-align: center;
+    }
+    
+    .contact-item {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .footer-legal {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* CTA секции */
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .cta-note {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* Кнопка наверх */
+    .scroll-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+    }
+}
+
+/* Маленькие мобильные устройства (до 480px) */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .bot-illustration {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .bot-body {
+        width: 130px;
+        height: 130px;
+    }
+    
+    .telegram-icon {
+        font-size: 2.5rem;
+    }
+    
+    .meat-chunk {
+        width: 60px;
+        height: 60px;
+        bottom: 30px;
+        right: 30px;
+    }
+    
+    .fish-icon {
+        width: 50px;
+        height: 50px;
+        top: 30px;
+        left: 30px;
+    }
+    
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .portfolio-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .stat-card {
+        padding: 20px;
+    }
+    
+    .pagination {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .page-numbers {
+        order: 3;
+    }
+    
+    .testimonial {
+        padding: 20px;
+    }
+    
+    .modal-content {
+        width: 95%;
+        padding: 20px;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    input, select, textarea {
+        padding: 10px 15px;
+    }
+    
+    .btn {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+    
+    .btn-large {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+}
+
+/* Ландшафтная ориентация на мобильных */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        padding: 120px 0 60px;
+        min-height: auto;
+    }
+    
+    .hero .container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .bot-illustration {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .nav-menu {
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+}
+
+/* Высокое разрешение (Retina) */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .logo-icon .fa-fish,
+    .logo-icon .fa-drumstick-bite {
+        text-shadow: 0 0 1px currentColor;
+    }
+    
+    .hero::before,
+    .page-header::before,
+    .cta-section::before {
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000"><path fill="%232d8fff" opacity="0.05" d="M0,1000Q500,800,1000,1000Q1500,1200,2000,1000L2000,2000L0,2000Z"/></svg>');
+    }
+}
+
+/* Печать */
+@media print {
+    .header,
+    .footer,
+    .cta-section,
+    .scroll-top,
+    .nav-toggle,
+    .social-links,
+    .hero-buttons,
+    .service-footer .btn,
+    .member-contact .btn {
+        display: none !important;
+    }
+    
+    .hero,
+    .page-header,
+    .features,
+    .services-main,
+    .portfolio,
+    .team-main,
+    .contact {
+        padding: 20px 0;
+        background: white !important;
+        color: black !important;
+    }
+    
+    .hero-title,
+    .section-title,
+    .page-header h1 {
+        color: black !important;
+        background: none !important;
+        -webkit-text-fill-color: black !important;
+        text-shadow: none !important;
+    }
+    
+    .bot-illustration,
+    .feature-icon,
+    .service-icon,
+    .process-step,
+    .team-member,
+    .portfolio-card {
+        break-inside: avoid;
+    }
+    
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+    
+    a[href^="http"]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.9em;
+        color: #666;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+/* Темная тема (если поддерживается) */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        color: #e0e0e0;
+    }
+    
+    .header {
+        background: rgba(26, 26, 46, 0.95);
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    }
+    
+    .hero {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    }
+    
+    .features,
+    .services-main {
+        background: #1a1a2e;
+    }
+    
+    .service-card,
+    .process-step,
+    .feature-card,
+    .tech-item,
+    .portfolio-card,
+    .team-member,
+    .faq-item {
+        background: #16213e;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .service-footer,
+    .faq-question {
+        background: #0f3460;
+    }
+    
+    .highlight-blue {
+        color: #64b5f6;
+    }
+    
+    .highlight-red {
+        color: #ef5350;
+    }
+}
+
+/* Анимации для слабовидящих */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
