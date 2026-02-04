@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги - Fish & Meat Studio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-fish"></i>
+                        <i class="fas fa-drumstick-bite"></i>
+                    </div>
+                    <span class="logo-text">Fish&Meat</span>
+                    <span class="logo-sub">Studio</span>
+                </a>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Меню навигации">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="services.html" class="active">Услуги</a></li>
+                    <li><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="team.html">Команда</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li><a href="blog.html" class="blog-link">Блог</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Наши услуги</h1>
+            <p>Комплексные решения для вашего бизнеса в Telegram</p>
+            <div class="breadcrumbs">
+                <a href="index.html">Главная</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Услуги</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-main">
+        <div class="container">
+            <div class="services-intro">
+                <h2 class="section-title">Что мы предлагаем?</h2>
+                <p class="section-subtitle">Мы создаем ботов, которые сочетают <span class="highlight-blue">глубину</span> функциональности с <span class="highlight-red">эффективностью</span> работы</p>
+                <div class="services-tabs" id="servicesTabs">
+                    <button class="tab-btn active" data-tab="all">Все услуги</button>
+                    <button class="tab-btn" data-tab="fish">Fish проекты</button>
+                    <button class="tab-btn" data-tab="meat">Meat проекты</button>
+                    <button class="tab-btn" data-tab="hybrid">Гибридные</button>
+                </div>
+            </div>
+
+            <div class="services-grid">
+                <!-- Рыбные услуги (аналитика) -->
+                <div class="service-card fish-service" id="analytics" data-category="fish">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="service-badge fish-badge">Fish</div>
+                    </div>
+                    <div class="service-body">
+                        <h3>Аналитические боты</h3>
+                        <p class="service-description">Глубокий анализ данных, отчетность, мониторинг показателей и бизнес-аналитика в реальном времени</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Аналитика продаж и конверсии</li>
+                            <li><i class="fas fa-check"></i> Отчеты в реальном времени</li>
+                            <li><i class="fas fa-check"></i> Интеграция с CRM системами</li>
+                            <li><i class="fas fa-check"></i> Визуализация данных</li>
+                            <li><i class="fas fa-check"></i> Прогнозная аналитика</li>
+                        </ul>
+                        <div class="service-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Data Science</span>
+                        </div>
+                    </div>
+                    <div class="service-footer">
+                        <div class="service-price">
+                            <span class="price-from">от</span>
+                            <span class="price-amount">25 000 ₽</span>
+                            <span class="price-period">/ проект</span>
+                        </div>
+                        <a href="contact.html?service=analytics" class="btn btn-primary">
+                            <i class="fas fa-shopping-cart"></i> Заказать
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Мясные услуги (автоматизация) -->
+                <div class="service-card meat-service" id="automation" data-category="meat">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="service-badge meat-badge">Meat</div>
+                    </div>
+                    <div class="service-body">
+                        <h3>Боты-автоматизаторы</h3>
+                        <p class="service-description">Автоматизация рутинных процессов, коммуникаций и рабочих операций для повышения эффективности</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Автоответчик и чат-боты</li>
+                            <li><i class="fas fa-check"></i> Бронирование и записи</li>
+                            <li><i class="fas fa-check"></i> Напоминания и уведомления</li>
+                            <li><i class="fas fa-check"></i> Интеграция с календарем</li>
+                            <li><i class="fas fa-check"></i> Автоматизация документооборота</li>
+                        </ul>
+                        <div class="service-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">API Integration</span>
+                        </div>
+                    </div>
+                    <div class="service-footer">
+                        <div class="service-price">
+                            <span class="price-from">от</span>
+                            <span class="price-amount">30 000 ₽</span>
+                            <span class="price-period">/ проект</span>
+                        </div>
+                        <a href="contact.html?service=automation" class="btn btn-primary">
+                            <i class="fas fa-shopping-cart"></i> Заказать
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Гибридные услуги -->
+                <div class="service-card hybrid-service" id="ecommerce" data-category="hybrid">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div class="service-badge hybrid-badge">Hybrid</div>
+                    </div>
+                    <div class="service-body">
+                        <h3>Торговые боты</h3>
+                        <p class="service-description">Полноценные магазины и системы продаж в Telegram с аналитикой и автоматизацией</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Каталог товаров и категории</li>
+                            <li><i class="fas fa-check"></i> Корзина и онлайн-оплата</li>
+                            <li><i class="fas fa-check"></i> Отслеживание заказов</li>
+                            <li><i class="fas fa-check"></i> CRM для продавцов</li>
+                            <li><i class="fas fa-check"></i> Система скидок и промокодов</li>
+                        </ul>
+                        <div class="service-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Payment API</span>
+                        </div>
+                    </div>
+                    <div class="service-footer">
+                        <div class="service-price">
+                            <span class="price-from">от</span>
+                            <span class="price-amount">45 000 ₽</span>
+                            <span class="price-period">/ проект</span>
+                        </div>
+                        <a href="contact.html?service=ecommerce" class="btn btn-primary">
+                            <i class="fas fa-shopping-cart"></i> Заказать
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Поддержка -->
+                <div class="service-card support-service" id="support" data-category="hybrid">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div class="service-badge support-badge">Support</div>
+                    </div>
+                    <div class="service-body">
+                        <h3>Поддержка и развитие</h3>
+                        <p class="service-description">Техническая поддержка, доработка и масштабирование существующих ботов</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Обновление функционала</li>
+                            <li><i class="fas fa-check"></i> Техподдержка 24/7</li>
+                            <li><i class="fas fa-check"></i> Консультации и аудит</li>
+                            <li><i class="fas fa-check"></i> Оптимизация производительности</li>
+                            <li><i class="fas fa-check"></i> Масштабирование системы</li>
+                        </ul>
+                        <div class="service-tech">
+                            <span class="tech-tag">DevOps</span>
+                            <span class="tech-tag">Monitoring</span>
+                            <span class="tech-tag">Security</span>
+                        </div>
+                    </div>
+                    <div class="service-footer">
+                        <div class="service-price">
+                            <span class="price-from">от</span>
+                            <span class="price-amount">10 000 ₽</span>
+                            <span class="price-period">/ месяц</span>
+                        </div>
+                        <a href="contact.html?service=support" class="btn btn-primary">
+                            <i class="fas fa-shopping-cart"></i> Заказать
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Процесс работы -->
+            <div class="process-section">
+                <h2 class="section-title">Процесс работы</h2>
+                <div class="process-timeline">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <div class="step-header">
+                                <h3>Погружение (Fish Phase)</h3>
+                                <span class="step-duration">1-3 дня</span>
+                            </div>
+                            <p>Глубокий анализ ваших потребностей, исследование рынка и проектирование архитектуры</p>
+                            <ul class="step-tasks">
+                                <li>Анализ бизнес-процессов</li>
+                                <li>Исследование целевой аудитории</li>
+                                <li>Создание технического задания</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <div class="step-header">
+                                <h3>Проектирование</h3>
+                                <span class="step-duration">3-5 дней</span>
+                            </div>
+                            <p>Создание архитектуры, дизайна интерфейса и прототипа будущего бота</p>
+                            <ul class="step-tasks">
+                                <li>Проектирование базы данных</li>
+                                <li>Создание wireframe интерфейса</li>
+                                <li>Планирование API интеграций</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <div class="step-header">
+                                <h3>Разработка (Meat Phase)</h3>
+                                <span class="step-duration">7-21 день</span>
+                            </div>
+                            <p>Активная фаза программирования, тестирования и отладки функционала</p>
+                            <ul class="step-tasks">
+                                <li>Backend разработка</li>
+                                <li>Frontend интеграция</li>
+                                <li>Тестирование и отладка</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <div class="step-header">
+                                <h3>Запуск и поддержка</h3>
+                                <span class="step-duration">Постоянно</span>
+                            </div>
+                            <p>Внедрение бота в работу, обучение сотрудников и дальнейшее сопровождение</p>
+                            <ul class="step-tasks">
+                                <li>Деплой на сервер</li>
+                                <li>Обучение пользователей</li>
+                                <li>Техническая поддержка</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <div class="faq-section">
+                <h2 class="section-title">Частые вопросы</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Сколько времени занимает разработка бота?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Время разработки зависит от сложности проекта. Простые боты - 1-2 недели, средние проекты - 2-4 недели, сложные системы - 1-2 месяца. Мы всегда обсуждаем реалистичные сроки на этапе планирования.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Предоставляете ли вы гарантию на работу?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Да, мы предоставляем 3 месяца гарантии на все наши разработки. В течение этого периода устраняем любые ошибки и неисправности бесплатно.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Можно ли доработать существующего бота?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Да, мы занимаемся доработкой и поддержкой существующих ботов. Сначала проводим анализ кода и архитектуры, затем предлагаем план улучшений и оцениваем стоимость работ.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA секция -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Готовы создать своего бота?</h2>
+                <p>Оставьте заявку и получите бесплатную консультацию от нашего эксперта</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-calendar-check"></i> Записаться на консультацию
+                    </a>
+                    <a href="tel:+79991234567" class="btn btn-outline btn-large">
+                        <i class="fas fa-phone"></i> Позвонить нам
+                    </a>
+                </div>
+                <p class="cta-note">
+                    <i class="fas fa-clock"></i> Первая консультация бесплатно • 
+                    <i class="fas fa-shield-alt"></i> Конфиденциальность гарантирована
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-fish"></i>
+                            <i class="fas fa-drumstick-bite"></i>
+                        </div>
+                        <span class="logo-text">Fish&Meat</span>
+                        <span class="logo-sub">Studio</span>
+                    </a>
+                    <p class="footer-tagline">Глубина анализа. Энергия реализации.</p>
+                    <p class="footer-description">Создаем умных Telegram-ботов для вашего бизнеса с 2021 года</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="portfolio.html">Портфолио</a></li>
+                        <li><a href="team.html">Команда</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h4>Услуги</h4>
+                    <ul>
+                        <li><a href="services.html#analytics">Аналитические боты</a></li>
+                        <li><a href="services.html#automation">Боты-автоматизаторы</a></li>
+                        <li><a href="services.html#ecommerce">Торговые боты</a></li>
+                        <li><a href="services.html#support">Поддержка</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Контакты</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p class="contact-label">Email</p>
+                            <a href="mailto:info@fishmeat.studio">info@fishmeat.studio</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <p class="contact-label">Телефон</p>
+                            <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p class="contact-label">Адрес</p>
+                            <p>г. Москва, ул. Разработчиков, 15</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://t.me/fishmeatstudio" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://github.com/fishmeatstudio" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://vk.com/fishmeatstudio" aria-label="VK">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@fishmeatstudio" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fish & Meat Studio. Все права защищены.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Политика конфиденциальности</a>
+                    <a href="terms.html">Пользовательское соглашение</a>
+                    <a href="sitemap.xml">Карта сайта</a>
+                </div>
+                <p class="made-with">
+                    Создано с <i class="fas fa-heart heart-icon" aria-hidden="true"></i> для вашего бизнеса
+                    <span class="version">v2.0.1</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/faq.js"></script>
+</body>
+</html>
