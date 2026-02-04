@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Fish & Meat Studio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-fish"></i>
+                        <i class="fas fa-drumstick-bite"></i>
+                    </div>
+                    <span class="logo-text">Fish&Meat</span>
+                    <span class="logo-sub">Studio</span>
+                </a>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Меню навигации">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="team.html">Команда</a></li>
+                    <li><a href="contact.html" class="active">Контакты</a></li>
+                    <li><a href="blog.html" class="blog-link">Блог</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Связаться с нами</h1>
+            <p>Готовы создать бота для вашего бизнеса? Давайте обсудим!</p>
+            <div class="breadcrumbs">
+                <a href="index.html">Главная</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Контакты</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h2><i class="fas fa-map-marker-alt"></i> Наши контакты</h2>
+                        <p class="info-description">Мы всегда на связи и готовы ответить на ваши вопросы. Выберите удобный способ связи:</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Email</h4>
+                                    <a href="mailto:info@fishmeat.studio">info@fishmeat.studio</a>
+                                    <a href="mailto:sales@fishmeat.studio">sales@fishmeat.studio</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Телефон</h4>
+                                    <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+                                    <p class="contact-note">Рабочие дни: Пн-Пт, 9:00-18:00</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Часы работы</h4>
+                                    <p>Понедельник - Пятница: 9:00 - 18:00</p>
+                                    <p>Суббота - Воскресенье: выходной</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Адрес</h4>
+                                    <p>г. Москва, ул. Разработчиков, 15</p>
+                                    <p>Бизнес-центр "Код", офис 404</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h2><i class="fas fa-users"></i> Мы в соцсетях</h2>
+                        <p class="info-description">Подписывайтесь на нас в социальных сетях, чтобы быть в курсе новостей и акций:</p>
+                        
+                        <div class="social-grid">
+                            <a href="https://t.me/fishmeatstudio" class="social-card telegram" target="_blank" rel="noopener">
+                                <div class="social-icon">
+                                    <i class="fab fa-telegram"></i>
+                                </div>
+                                <div class="social-info">
+                                    <h4>Telegram</h4>
+                                    <p>@fishmeatstudio</p>
+                                    <span class="social-followers">1500+ подписчиков</span>
+                                </div>
+                            </a>
+                            
+                            <a href="https://github.com/fishmeatstudio" class="social-card github" target="_blank" rel="noopener">
+                                <div class="social-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="social-info">
+                                    <h4>GitHub</h4>
+                                    <p>fishmeatstudio</p>
+                                    <span class="social-followers">50+ репозиториев</span>
+                                </div>
+                            </a>
+                            
+                            <a href="https://vk.com/fishmeatstudio" class="social-card vk" target="_blank" rel="noopener">
+                                <div class="social-icon">
+                                    <i class="fab fa-vk"></i>
+                                </div>
+                                <div class="social-info">
+                                    <h4>VK</h4>
+                                    <p>fishmeatstudio</p>
+                                    <span class="social-followers">3000+ подписчиков</span>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.youtube.com/@fishmeatstudio" class="social-card youtube" target="_blank" rel="noopener">
+                                <div class="social-icon">
+                                    <i class="fab fa-youtube"></i>
+                                </div>
+                                <div class="social-info">
+                                    <h4>YouTube</h4>
+                                    <p>@fishmeatstudio</p>
+                                    <span class="social-followers">10000+ просмотров</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card cta-card">
+                        <div class="cta-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="cta-content">
+                            <h3>Бесплатная консультация</h3>
+                            <p>Запишитесь на бесплатную 30-минутную консультацию с нашим тимлидом Артемом Чудиным</p>
+                            <a href="#consultation-form" class="btn btn-primary">
+                                <i class="fas fa-video"></i> Записаться на созвон
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <div class="form-card">
+                        <h2><i class="fas fa-paper-plane"></i> Отправить сообщение</h2>
+                        <p class="form-description">Заполните форму ниже и мы свяжемся с вами в течение 24 часов</p>
+                        
+                        <form id="contactForm" class="contact-form" data-validate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">
+                                        <i class="fas fa-user"></i> Имя *
+                                    </label>
+                                    <input type="text" id="name" name="name" required 
+                                           placeholder="Введите ваше имя"
+                                           aria-required="true"
+                                           data-pattern="text">
+                                    <div class="form-hint">Минимум 2 символа</div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">
+                                        <i class="fas fa-envelope"></i> Email *
+                                    </label>
+                                    <input type="email" id="email" name="email" required 
+                                           placeholder="your@email.com"
+                                           aria-required="true"
+                                           data-pattern="email">
+                                    <div class="form-hint">Мы не спамим</div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">
+                                        <i class="fas fa-phone"></i> Телефон
+                                    </label>
+                                    <input type="tel" id="phone" name="phone" 
+                                           placeholder="+7 (999) 123-45-67"
+                                           data-pattern="phone">
+                                    <div class="form-hint">Необязательно</div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="company">
+                                        <i class="fas fa-building"></i> Компания
+                                    </label>
+                                    <input type="text" id="company" name="company" 
+                                           placeholder="Название вашей компании">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">
+                                    <i class="fas fa-cogs"></i> Интересующая услуга *
+                                </label>
+                                <select id="service" name="service" required aria-required="true">
+                                    <option value="">Выберите услугу</option>
+                                    <option value="analytics">Аналитический бот (Fish)</option>
+                                    <option value="automation">Бот-автоматизатор (Meat)</option>
+                                    <option value="ecommerce">Торговый бот (Hybrid)</option>
+                                    <option value="support">Техническая поддержка</option>
+                                    <option value="consultation">Консультация</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="budget">
+                                    <i class="fas fa-ruble-sign"></i> Бюджет проекта
+                                </label>
+                                <select id="budget" name="budget">
+                                    <option value="">Не определился</option>
+                                    <option value="10-25">10 000 - 25 000 ₽</option>
+                                    <option value="25-50">25 000 - 50 000 ₽</option>
+                                    <option value="50-100">50 000 - 100 000 ₽</option>
+                                    <option value="100+">100 000 ₽ и более</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">
+                                    <i class="fas fa-comment"></i> Сообщение *
+                                </label>
+                                <textarea id="message" name="message" rows="6" required 
+                                          placeholder="Опишите ваш проект, задайте вопрос или поделитесь идеей..."
+                                          aria-required="true"
+                                          data-pattern="message"></textarea>
+                                <div class="form-hint">Минимум 10 символов</div>
+                                <div class="char-counter">
+                                    <span id="charCount">0</span>/1000 символов
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="source">
+                                    <i class="fas fa-question-circle"></i> Как вы о нас узнали?
+                                </label>
+                                <select id="source" name="source">
+                                    <option value="">Не важно</option>
+                                    <option value="search">Поиск (Google, Yandex)</option>
+                                    <option value="social">Социальные сети</option>
+                                    <option value="recommendation">Рекомендация</option>
+                                    <option value="portfolio">Портфолио</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group checkbox-group" id="consultation-form">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter">
+                                    Хочу получать полезные материалы о Telegram-ботах
+                                </label>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="agree" name="agree" required aria-required="true">
+                                <label for="agree">
+                                    Я согласен на обработку персональных данных *
+                                </label>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary btn-submit">
+                                    <i class="fas fa-paper-plane"></i> Отправить сообщение
+                                </button>
+                                <div class="form-note">
+                                    <p><i class="fas fa-info-circle"></i> Поля, отмеченные *, обязательны для заполнения</p>
+                                    <p><i class="fas fa-shield-alt"></i> Ваши данные защищены и не будут переданы третьим лицам</p>
+                                </div>
+                            </div>
+                        </form>
+                        
+                        <div id="successMessage" class="success-message" style="display: none;">
+                            <div class="success-content">
+                                <i class="fas fa-check-circle"></i>
+                                <h3>Сообщение отправлено!</h3>
+                                <p>Спасибо за ваше обращение. Мы свяжемся с вами в течение 24 часов.</p>
+                                <div class="success-details">
+                                    <p><i class="fas fa-envelope"></i> Копия письма отправлена на ваш email</p>
+                                    <p><i class="fas fa-clock"></i> Время обработки: 1-2 рабочих дня</p>
+                                </div>
+                                <button id="sendAnother" class="btn btn-outline">
+                                    <i class="fas fa-paper-plane"></i> Отправить еще одно сообщение
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Карта -->
+            <div class="map-section">
+                <h2 class="section-title">Как нас найти</h2>
+                <div class="map-container">
+                    <div id="map" style="height: 400px; border-radius: 15px;"></div>
+                    <div class="map-overlay">
+                        <div class="map-info">
+                            <h4><i class="fas fa-map-marker-alt"></i> Fish & Meat Studio</h4>
+                            <p>г. Москва, ул. Разработчиков, 15</p>
+                            <p>Бизнес-центр "Код", офис 404</p>
+                            <div class="map-directions">
+                                <a href="https://yandex.ru/maps/-/CDaM7Mf7" class="btn btn-outline btn-small" target="_blank" rel="noopener">
+                                    <i class="fas fa-directions"></i> Построить маршрут
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ -->
+            <div class="faq-section">
+                <h2 class="section-title">Частые вопросы</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Сколько времени занимает ответ на заявку?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Мы стараемся отвечать на все заявки в течение 24 часов в рабочие дни. В выходные дни ответ может занять до 48 часов.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Можно ли получить смету до консультации?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Да, мы можем предоставить предварительную оценку стоимости на основе описания проекта. Однако точная смета составляется после детального обсуждения требований.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Работаете ли вы с иностранными клиентами?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Да, мы работаем с клиентами по всему миру. Поддерживаем общение на русском и английском языках.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Предоставляете ли вы техническую документацию?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Да, мы предоставляем полную техническую документацию к каждому проекту, включая инструкции по использованию и поддержке.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA секция -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Не нашли ответ на свой вопрос?</h2>
+                <p>Позвоните нам или напишите в Telegram - мы ответим моментально!</p>
+                <div class="cta-buttons">
+                    <a href="tel:+79991234567" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone"></i> Позвонить сейчас
+                    </a>
+                    <a href="https://t.me/fishmeatstudio" class="btn btn-outline btn-large" target="_blank" rel="noopener">
+                        <i class="fab fa-telegram"></i> Написать в Telegram
+                    </a>
+                </div>
+                <p class="cta-note">
+                    <i class="fas fa-clock"></i> Ответ в течение 5 минут • 
+                    <i class="fas fa-comment"></i> Бесплатная консультация • 
+                    <i class="fas fa-shield-alt"></i> Конфиденциальность
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-fish"></i>
+                            <i class="fas fa-drumstick-bite"></i>
+                        </div>
+                        <span class="logo-text">Fish&Meat</span>
+                        <span class="logo-sub">Studio</span>
+                    </a>
+                    <p class="footer-tagline">Глубина анализа. Энергия реализации.</p>
+                    <p class="footer-description">Создаем умных Telegram-ботов для вашего бизнеса с 2021 года</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="portfolio.html">Портфолио</a></li>
+                        <li><a href="team.html">Команда</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h4>Услуги</h4>
+                    <ul>
+                        <li><a href="services.html#analytics">Аналитические боты</a></li>
+                        <li><a href="services.html#automation">Боты-автоматизаторы</a></li>
+                        <li><a href="services.html#ecommerce">Торговые боты</a></li>
+                        <li><a href="services.html#support">Поддержка</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Контакты</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p class="contact-label">Email</p>
+                            <a href="mailto:info@fishmeat.studio">info@fishmeat.studio</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <p class="contact-label">Телефон</p>
+                            <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p class="contact-label">Адрес</p>
+                            <p>г. Москва, ул. Разработчиков, 15</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://t.me/fishmeatstudio" aria-label="Telegram" target="_blank" rel="noopener">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://github.com/fishmeatstudio" aria-label="GitHub" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://vk.com/fishmeatstudio" aria-label="VK" target="_blank" rel="noopener">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@fishmeatstudio" aria-label="YouTube" target="_blank" rel="noopener">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fish & Meat Studio. Все права защищены.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Политика конфиденциальности</a>
+                    <a href="terms.html">Пользовательское соглашение</a>
+                    <a href="sitemap.xml">Карта сайта</a>
+                </div>
+                <p class="made-with">
+                    Создано с <i class="fas fa-heart heart-icon" aria-hidden="true"></i> для вашего бизнеса
+                    <span class="version">v2.0.1</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка наверх -->
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/menu.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/form-validation.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
