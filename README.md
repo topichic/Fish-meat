@@ -34,17 +34,16 @@ Fish & Meat Studio - это веб-сайт визитка для студии �
 - **Доступность (a11y)** - поддержка скринридеров и клавиатурной навигации
 - **Оптимизация** - быстрая загрузка и производительность
 
-## 👥 Команда проекта
+## 👥 Команда проекта (6 человек)
 
-| Участник | Роль | Основные задачи |
-|----------|------|-----------------|
-| **Артем Чудин** (Тимлид) | JavaScript разработчик | Архитектура проекта, основные скрипты, координация команды |
-| **Артур Любин** | Frontend разработчик | Основные стили CSS, дизайн компонентов |
-| **Калединов Андрей** | HTML верстальщик | Главная страница и страница услуг |
-| **Емельянов Павел** | HTML верстальщик | Портфолио и страница команды |
-| **Лупой Алексей** | Frontend разработчик | Адаптивная верстка, дополнительные скрипты |
-
-## 🏗️ Структура проекта
+| Участник | Роль | Основные задачи | Ветка Git |
+|----------|------|-----------------|-----------|
+| **Артем Чудин** (Тимлид) | JavaScript разработчик | Архитектура проекта, основные скрипты, координация команды | `feature/artem` |
+| **Артур Любин** | Frontend разработчик | Основные стили CSS (`style.css`), дизайн компонентов | `feature/arthurliubin` |
+| **Калединов Андрей** | HTML верстальщик | Главная страница (`index.html`), страница услуг (`services.html`) | `feature/MisakiAori` |
+| **Емельянов Павел** | HTML верстальщик | Портфолио (`portfolio.html`), страница команды (`team.html`) | `feature/Pasha` |
+| **Лупой Алексей** | Frontend разработчик | Адаптивная верстка (`responsive.css`), утилитарные скрипты (`menu.js`, `portfolio.js`) | `feature/Aleksey` |
+| **Абрамов Даниил** | Frontend разработчик | Страница блога (`blog.html`), дополнительные стили и скрипты для блога | `feature/daniil` |
 
 ## 🚀 Технологии
 
@@ -57,7 +56,7 @@ Fish & Meat Studio - это веб-сайт визитка для студии �
 - **Google Fonts** - шрифты Montserrat и Russo One
 - **Leaflet.js** - интерактивные карты (для контактов)
 
-## 📊 Git Workflow
+## 📊 Git Workflow с 6 участниками
 
 ### Ветвление проекта:
 ```mermaid  
@@ -110,27 +109,25 @@ Fish & Meat Studio - это веб-сайт визитка для студии �
     checkout feature/html-pages
     commit id: "Add index & services"
     checkout develop
-    merge feature/html-pages id: "Merge HTML pages"
+    merge feature/Aleksey
     
-    branch feature/css-styles
-    checkout feature/css-styles
-    commit id: "Add main styles"
-    commit id: "Add responsive"
+    branch feature/artem
+    checkout feature/artem
+    commit
     checkout develop
-    merge feature/css-styles id: "Merge CSS"
+    merge feature/artem
     
-    branch feature/js-functionality
-    checkout feature/js-functionality
-    commit id: "Add menu & forms"
-    commit id: "Add portfolio filters"
+    branch feature/daniil
+    checkout feature/daniil
+    commit
     checkout develop
-    merge feature/js-functionality id: "Merge JS"
+    merge feature/daniil
     
     branch feature/optimization
     checkout feature/optimization
-    commit id: "Add performance optimizations"
+    commit
     checkout develop
-    merge feature/optimization id: "Merge optimizations"
+    merge feature/optimization
     
     checkout main
     merge develop id: "Release v2.0"
