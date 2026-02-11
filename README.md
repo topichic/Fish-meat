@@ -42,9 +42,10 @@ Fish & Meat Studio - это веб-сайт визитка для студии �
 - **Google Fonts** - шрифты Montserrat и Russo One
 - **Leaflet.js** - интерактивные карты (для контактов)
 
-## 📊 Git Workflow
+## 📊 Git Workflow с 6 участниками
 
 ### Ветвление проекта:
+
 ```mermaid
 gitGraph
     commit id: "Initial commit"
@@ -52,38 +53,53 @@ gitGraph
     checkout develop
     commit id: "Add base structure"
     
+    branch feature/html-core
+    checkout feature/html-core
+    commit id: "Add index & services by Andrey"
+    checkout develop
+    merge feature/html-core
+    
     branch feature/html-pages
     checkout feature/html-pages
-    commit id: "Add index & services"
+    commit id: "Add portfolio & team by Pavel"
     checkout develop
-    merge feature/html-pages id: "Merge HTML pages"
+    merge feature/html-pages
     
-    branch feature/css-styles
-    checkout feature/css-styles
-    commit id: "Add main styles"
-    commit id: "Add responsive"
+    branch feature/css-core
+    checkout feature/css-core
+    commit id: "Add main styles by Arthur"
     checkout develop
-    merge feature/css-styles id: "Merge CSS"
+    merge feature/css-core
     
-    branch feature/js-functionality
-    checkout feature/js-functionality
-    commit id: "Add menu & forms"
-    commit id: "Add portfolio filters"
+    branch feature/css-responsive
+    checkout feature/css-responsive
+    commit id: "Add responsive styles by Alexey"
     checkout develop
-    merge feature/js-functionality id: "Merge JS"
+    merge feature/css-responsive
+    
+    branch feature/js-core
+    checkout feature/js-core
+    commit id: "Add main scripts by Artem"
+    checkout develop
+    merge feature/js-core
+    
+    branch feature/blog
+    checkout feature/blog
+    commit id: "Add blog page by Daniel"
+    checkout develop
+    merge feature/blog
     
     branch feature/optimization
     checkout feature/optimization
-    commit id: "Add performance optimizations"
+    commit id: "Performance optimizations"
     checkout develop
-    merge feature/optimization id: "Merge optimizations"
+    merge feature/optimization
     
     checkout main
-    merge develop id: "Release v2.0"
-    tag: "v2.0.0"
-    
+    merge develop id: "Release v2.1"
+    tag id: "v2.1.0"
+```
 ---
-
 ## **Итоговое распределение работы:**
 
 1. **Артем Чудин (Тимлид)** - JavaScript архитектура, координация, основные скрипты (`main.js`, `form-validation.js`, `contact.js`)
