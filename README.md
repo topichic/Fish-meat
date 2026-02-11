@@ -19,17 +19,16 @@ Fish & Meat Studio - это веб-сайт визитка для студии �
 - **Доступность (a11y)** - поддержка скринридеров и клавиатурной навигации
 - **Оптимизация** - быстрая загрузка и производительность
 
-## 👥 Команда проекта
+## 👥 Команда проекта (6 человек)
 
-| Участник | Роль | Основные задачи |
-|----------|------|-----------------|
-| **Артем Чудин** (Тимлид) | JavaScript разработчик | Архитектура проекта, основные скрипты, координация команды |
-| **Артур Любин** | Frontend разработчик | Основные стили CSS, дизайн компонентов |
-| **Калединов Андрей** | HTML верстальщик | Главная страница и страница услуг |
-| **Емельянов Павел** | HTML верстальщик | Портфолио и страница команды |
-| **Лупой Алексей** | Frontend разработчик | Адаптивная верстка, дополнительные скрипты |
-
-## 🏗️ Структура проекта
+| Участник | Роль | Основные задачи | Ветка Git |
+|----------|------|-----------------|-----------|
+| **Артем Чудин** (Тимлид) | JavaScript разработчик | Архитектура проекта, основные скрипты, координация команды | `feature/artem` |
+| **Артур Любин** | Frontend разработчик | Основные стили CSS (`style.css`), дизайн компонентов | `feature/arthurliubin` |
+| **Калединов Андрей** | HTML верстальщик | Главная страница (`index.html`), страница услуг (`services.html`) | `feature/MisakiAori` |
+| **Емельянов Павел** | HTML верстальщик | Портфолио (`portfolio.html`), страница команды (`team.html`) | `feature/Pasha` |
+| **Лупой Алексей** | Frontend разработчик | Адаптивная верстка (`responsive.css`), утилитарные скрипты (`menu.js`, `portfolio.js`) | `feature/Aleksey` |
+| **Абрамов Даниил** | Frontend разработчик | Страница блога (`blog.html`), дополнительные стили и скрипты для блога | `feature/daniil` |
 
 ## 🚀 Технологии
 
@@ -53,41 +52,41 @@ gitGraph
     checkout develop
     commit
     
-    branch feature/html-core
-    checkout feature/html-core
+    branch feature/MisakiAori
+    checkout feature/MisakiAori
     commit
     checkout develop
-    merge feature/html-core
+    merge feature/MisakiAori
     
-    branch feature/html-pages
-    checkout feature/html-pages
+    branch feature/Pasha
+    checkout feature/Pasha
     commit
     checkout develop
-    merge feature/html-pages
+    merge feature/Pasha
     
-    branch feature/css-core
-    checkout feature/css-core
+    branch feature/arthurliubin
+    checkout feature/arthurliubin
     commit
     checkout develop
-    merge feature/css-core
+    merge feature/arthurliubin
     
-    branch feature/css-responsive
-    checkout feature/css-responsive
+    branch feature/Aleksey
+    checkout feature/Aleksey
     commit
     checkout develop
-    merge feature/css-responsive
+    merge feature/Aleksey
     
-    branch feature/js-core
-    checkout feature/js-core
+    branch feature/artem
+    checkout feature/artem
     commit
     checkout develop
-    merge feature/js-core
+    merge feature/artem
     
-    branch feature/blog
-    checkout feature/blog
+    branch feature/daniil
+    checkout feature/daniil
     commit
     checkout develop
-    merge feature/blog
+    merge feature/daniil
     
     branch feature/optimization
     checkout feature/optimization
