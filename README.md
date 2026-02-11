@@ -103,12 +103,6 @@ gitGraph
     checkout develop
     merge feature/daniil
     
-    branch feature/optimization
-    checkout feature/optimization
-    commit
-    checkout develop
-    merge feature/optimization
-    
     checkout main
     merge develop
 ```
