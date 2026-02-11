@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио - Fish & Meat Studio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-fish"></i>
+                        <i class="fas fa-drumstick-bite"></i>
+                    </div>
+                    <span class="logo-text">Fish&Meat</span>
+                    <span class="logo-sub">Studio</span>
+                </a>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Меню навигации">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="portfolio.html" class="active">Портфолио</a></li>
+                    <li><a href="team.html">Команда</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li><a href="blog.html" class="blog-link">Блог</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Наши работы</h1>
+            <p>Реализованные проекты, которые приносят пользу бизнесу</p>
+            <div class="breadcrumbs">
+                <a href="index.html">Главная</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Портфолио</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <div class="container">
+            <div class="portfolio-filters">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">
+                        <i class="fas fa-layer-group"></i> Все проекты
+                    </button>
+                    <button class="filter-btn" data-filter="fish">
+                        <i class="fas fa-fish"></i> Fish проекты
+                    </button>
+                    <button class="filter-btn" data-filter="meat">
+                        <i class="fas fa-drumstick-bite"></i> Meat проекты
+                    </button>
+                    <button class="filter-btn" data-filter="hybrid">
+                        <i class="fas fa-sync-alt"></i> Гибридные
+                    </button>
+                </div>
+                <div class="filter-search">
+                    <input type="text" id="portfolioSearch" placeholder="Поиск проектов...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>50+</h3>
+                        <p>Запущенных проектов</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>35</h3>
+                        <p>Постоянных клиентов</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>98%</h3>
+                        <p>Довольных клиентов</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>3 года</h3>
+                        <p>Опыта работы</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Проект 1 -->
+                <div class="portfolio-card fish-project" data-category="fish" data-search="analytics restaurant sales">
+                    <div class="portfolio-image">
+                        <div class="project-badge fish-badge">Fish</div>
+                        <div class="project-overlay">
+                            <a href="#" class="view-project" data-project="1">
+                                <i class="fas fa-expand"></i>
+                            </a>
+                        </div>
+                        <div class="project-image">
+                            <div class="placeholder-image analytics-bg">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="project-meta">
+                            <span class="project-category">Аналитика</span>
+                            <span class="project-date">2024</span>
+                        </div>
+                        <h3 class="project-title">AnalyticsPro Bot</h3>
+                        <p class="project-description">Бот для глубокого анализа продаж ресторана. Интеграция с 1С, автоматические отчеты, прогнозирование.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">1C API</span>
+                            <span class="tech-tag">Data Visualization</span>
+                        </div>
+                        <div class="project-results">
+                            <h4>Результаты:</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Сокращение времени отчетов на 70%</li>
+                                <li><i class="fas fa-check-circle"></i> Увеличение точности прогнозов</li>
+                                <li><i class="fas fa-check-circle"></i> Автоматизация 5 рутинных процессов</li>
+                            </ul>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="btn btn-outline btn-small view-details" data-project="1">
+                                <i class="fas fa-info-circle"></i> Подробнее
+                            </a>
+                            <div class="project-client">
+                                <span class="client-label">Клиент:</span>
+                                <span class="client-name">Сеть ресторанов "ВкусноГрад"</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Проект 2 -->
+                <div class="portfolio-card meat-project" data-category="meat" data-search="delivery automation">
+                    <div class="portfolio-image">
+                        <div class="project-badge meat-badge">Meat</div>
+                        <div class="project-overlay">
+                            <a href="#" class="view-project" data-project="2">
+                                <i class="fas fa-expand"></i>
+                            </a>
+                        </div>
+                        <div class="project-image">
+                            <div class="placeholder-image delivery-bg">
+                                <i class="fas fa-shipping-fast"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="project-meta">
+                            <span class="project-category">Автоматизация</span>
+                            <span class="project-date">2023</span>
+                        </div>
+                        <h3 class="project-title">QuickDelivery Bot</h3>
+                        <p class="project-description">Система автоматизации доставки для службы курьеров. Геолокация, уведомления, оплата онлайн.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Yandex Maps API</span>
+                            <span class="tech-tag">Payment System</span>
+                        </div>
+                        <div class="project-results">
+                            <h4>Результаты:</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Ускорение обработки заказов в 3 раза</li>
+                                <li><i class="fas fa-check-circle"></i> Снижение ошибок при доставке на 45%</li>
+                                <li><i class="fas fa-check-circle"></i> Интеграция с 50+ курьерами</li>
+                            </ul>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="btn btn-outline btn-small view-details" data-project="2">
+                                <i class="fas fa-info-circle"></i> Подробнее
+                            </a>
+                            <div class="project-client">
+                                <span class="client-label">Клиент:</span>
+                                <span class="client-name">Служба доставки "БыстрыйКурьер"</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Проект 3 -->
+                <div class="portfolio-card hybrid-project" data-category="hybrid" data-search="ecommerce shop">
+                    <div class="portfolio-image">
+                        <div class="project-badge hybrid-badge">Hybrid</div>
+                        <div class="project-overlay">
+                            <a href="#" class="view-project" data-project="3">
+                                <i class="fas fa-expand"></i>
+                            </a>
+                        </div>
+                        <div class="project-image">
+                            <div class="placeholder-image shop-bg">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="project-meta">
+                            <span class="project-category">Электронная коммерция</span>
+                            <span class="project-date">2024</span>
+                        </div>
+                        <h3 class="project-title">ShopTelegram Bot</h3>
+                        <p class="project-description">Полноценный интернет-магазин в Telegram. Каталог из 1000+ товаров, корзина, система скидок.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Payment API</span>
+                            <span class="tech-tag">Redis Cache</span>
+                        </div>
+                        <div class="project-results">
+                            <h4>Результаты:</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Увеличение продаж на 200%</li>
+                                <li><i class="fas fa-check-circle"></i> Средний чек вырос на 30%</li>
+                                <li><i class="fas fa-check-circle"></i> 5000+ активных пользователей</li>
+                            </ul>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="btn btn-outline btn-small view-details" data-project="3">
+                                <i class="fas fa-info-circle"></i> Подробнее
+                            </a>
+                            <div class="project-client">
+                                <span class="client-label">Клиент:</span>
+                                <span class="client-name">Магазин электроники "ТехноМир"</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Проект 4 -->
+                <div class="portfolio-card fish-project" data-category="fish" data-search="crm analytics">
+                    <div class="portfolio-image">
+                        <div class="project-badge fish-badge">Fish</div>
+                        <div class="project-overlay">
+                            <a href="#" class="view-project" data-project="4">
+                                <i class="fas fa-expand"></i>
+                            </a>
+                        </div>
+                        <div class="project-image">
+                            <div class="placeholder-image crm-bg">
+                                <i class="fas fa-users-cog"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="project-meta">
+                            <span class="project-category">CRM</span>
+                            <span class="project-date">2023</span>
+                        </div>
+                        <h3 class="project-title">CRM Assistant Bot</h3>
+                        <p class="project-description">Бот-ассистент для управления клиентской базой. Аналитика взаимодействий, напоминания, сегментация.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">Telegram API</span>
+                            <span class="tech-tag">Machine Learning</span>
+                        </div>
+                        <div class="project-results">
+                            <h4>Результаты:</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Увеличение конверсии на 45%</li>
+                                <li><i class="fas fa-check-circle"></i> Автоматизация 80% рутинных задач</li>
+                                <li><i class="fas fa-check-circle"></i> Интеграция с 3 CRM системами</li>
+                            </ul>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="btn btn-outline btn-small view-details" data-project="4">
+                                <i class="fas fa-info-circle"></i> Подробнее
+                            </a>
+                            <div class="project-client">
+                                <span class="client-label">Клиент:</span>
+                                <span class="client-name">Агентство недвижимости "ДомЭксперт"</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Проект 5 -->
+                <div class="portfolio-card meat-project" data-category="meat" data-search="booking automation">
+                    <div class="portfolio-image">
+                        <div class="project-badge meat-badge">Meat</div>
+                        <div class="project-overlay">
+                            <a href="#" class="view-project" data-project="5">
+                                <i class="fas fa-expand"></i>
+                            </a>
+                        </div>
+                        <div class="project-image">
+                            <div class="placeholder-image booking-bg">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="project-meta">
+                            <span class="project-category">Бронирование</span>
+                            <span class="project-date">2024</span>
+                        </div>
+                        <h3 class="project-title">BookEasy Bot</h3>
+                        <p class="project-description">Система онлайн-бронирования для студии красоты. Расписание, оплата, напоминания, отзывы.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Calendar API</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                        <div class="project-results">
+                            <h4>Результаты:</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Увеличение бронирований на 150%</li>
+                                <li><i class="fas fa-check-circle"></i> Снижение пропусков на 60%</li>
+                                <li><i class="fas fa-check-circle"></i> Автоматизация расписания</li>
+                            </ul>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="btn btn-outline btn-small view-details" data-project="5">
+                                <i class="fas fa-info-circle"></i> Подробнее
+                            </a>
+                            <div class="project-client">
+                                <span class="client-label">Клиент:</span>
+                                <span class="client-name">Студия красоты "Элеганс"</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Проект 6 -->
+                <div class="portfolio-card hybrid-project" data-category="hybrid" data-search="education learning">
+                    <div class="portfolio-image">
+                        <div class="project-badge hybrid-badge">Hybrid</div>
+                        <div class="project-overlay">
+                            <a href="#" class="view-project" data-project="6">
+                                <i class="fas fa-expand"></i>
+                            </a>
+                        </div>
+                        <div class="project-image">
+                            <div class="placeholder-image education-bg">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="project-meta">
+                            <span class="project-category">Образование</span>
+                            <span class="project-date">2023</span>
+                        </div>
+                        <h3 class="project-title">EduBot Pro</h3>
+                        <p class="project-description">Образовательная платформа для онлайн-курсов. Тесты, прогресс, сертификаты, поддержка учителей.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">WebSockets</span>
+                            <span class="tech-tag">AWS S3</span>
+                        </div>
+                        <div class="project-results">
+                            <h4>Результаты:</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Увеличение завершения курсов на 75%</li>
+                                <li><i class="fas fa-check-circle"></i> Автоматизация проверки заданий</li>
+                                <li><i class="fas fa-check-circle"></i> Поддержка 1000+ студентов</li>
+                            </ul>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="btn btn-outline btn-small view-details" data-project="6">
+                                <i class="fas fa-info-circle"></i> Подробнее
+                            </a>
+                            <div class="project-client">
+                                <span class="client-label">Клиент:</span>
+                                <span class="client-name">Онлайн-школа "ЗнаниеПлюс"</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Пагинация -->
+            <div class="pagination">
+                <button class="page-btn prev-btn" disabled>
+                    <i class="fas fa-chevron-left"></i> Назад
+                </button>
+                <div class="page-numbers">
+                    <button class="page-number active">1</button>
+                    <button class="page-number">2</button>
+                    <button class="page-number">3</button>
+                    <span class="page-dots">...</span>
+                    <button class="page-number">8</button>
+                </div>
+                <button class="page-btn next-btn">
+                    Далее <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно проекта -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body" id="modalBody">
+                <!-- Контент загружается через JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Отзывы -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Отзывы клиентов</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"Fish & Meat Studio создали для нас аналитического бота, который полностью изменил работу с данными. Особенно впечатлила глубина анализа (Fish часть) - они действительно погрузились в наш бизнес."</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Анна Ковалева</h4>
+                            <p>Директор, "Вкусная доставка"</p>
+                            <span class="author-project">Проект: AnalyticsPro Bot</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"Скорость внедрения была невероятной (Meat подход)! Бот для автоматизации доставки заработал через 2 недели после обсуждения. Работаем уже год без сбоев."</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Михаил Семенов</h4>
+                            <p>Владелец сети кофеен</p>
+                            <span class="author-project">Проект: QuickDelivery Bot</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"Гибридный подход Fish & Meat показал себя в полной мере. Аналитика продаж и автоматизация заказов в одном боте - именно то, что нужно современному бизнесу."</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Дмитрий Иванов</h4>
+                            <p>CEO, "ТехноМир"</p>
+                            <span class="author-project">Проект: ShopTelegram Bot</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA секция -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Хотите такой же результат?</h2>
+                <p>Оставьте заявку и мы создадим бота для вашего бизнеса</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-paper-plane"></i> Обсудить проект
+                    </a>
+                    <a href="services.html" class="btn btn-outline btn-large">
+                        <i class="fas fa-list-alt"></i> Все услуги
+                    </a>
+                </div>
+                <p class="cta-note">
+                    <i class="fas fa-check-circle"></i> Бесплатный анализ проекта • 
+                    <i class="fas fa-clock"></i> Срок от 2 недель • 
+                    <i class="fas fa-shield-alt"></i> Гарантия 3 месяца
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-fish"></i>
+                            <i class="fas fa-drumstick-bite"></i>
+                        </div>
+                        <span class="logo-text">Fish&Meat</span>
+                        <span class="logo-sub">Studio</span>
+                    </a>
+                    <p class="footer-tagline">Глубина анализа. Энергия реализации.</p>
+                    <p class="footer-description">Создаем умных Telegram-ботов для вашего бизнеса с 2021 года</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="portfolio.html">Портфолио</a></li>
+                        <li><a href="team.html">Команда</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h4>Услуги</h4>
+                    <ul>
+                        <li><a href="services.html#analytics">Аналитические боты</a></li>
+                        <li><a href="services.html#automation">Боты-автоматизаторы</a></li>
+                        <li><a href="services.html#ecommerce">Торговые боты</a></li>
+                        <li><a href="services.html#support">Поддержка</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Контакты</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p class="contact-label">Email</p>
+                            <a href="mailto:info@fishmeat.studio">info@fishmeat.studio</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <p class="contact-label">Телефон</p>
+                            <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p class="contact-label">Адрес</p>
+                            <p>г. Москва, ул. Разработчиков, 15</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://t.me/fishmeatstudio" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://github.com/fishmeatstudio" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://vk.com/fishmeatstudio" aria-label="VK">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@fishmeatstudio" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fish & Meat Studio. Все права защищены.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Политика конфиденциальности</a>
+                    <a href="terms.html">Пользовательское соглашение</a>
+                    <a href="sitemap.xml">Карта сайта</a>
+                </div>
+                <p class="made-with">
+                    Создано с <i class="fas fa-heart heart-icon" aria-hidden="true"></i> для вашего бизнеса
+                    <span class="version">v2.0.1</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>

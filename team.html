@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Команда - Fish & Meat Studio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-fish"></i>
+                        <i class="fas fa-drumstick-bite"></i>
+                    </div>
+                    <span class="logo-text">Fish&Meat</span>
+                    <span class="logo-sub">Studio</span>
+                </a>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Меню навигации">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="team.html" class="active">Команда</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li><a href="blog.html" class="blog-link">Блог</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Наша команда</h1>
+            <p>Эксперты, которые сочетают глубину знаний с энергией реализации</p>
+            <div class="breadcrumbs">
+                <a href="index.html">Главная</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Команда</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-main">
+        <div class="container">
+            <div class="team-intro">
+                <h2 class="section-title">Кто мы такие?</h2>
+                <p class="section-subtitle">Мы - команда из пяти специалистов, которые верят в силу сочетания разных подходов. Наша философия: <span class="highlight-blue">Fish</span> (глубина, анализ, стратегия) + <span class="highlight-red">Meat</span> (энергия, скорость, реализация) = идеальный результат.</p>
+            </div>
+
+            <div class="team-members">
+                <!-- Артем Чудин - Тимлид -->
+                <div class="team-member leader-member">
+                    <div class="member-photo">
+                        <div class="photo-placeholder leader-placeholder">
+                            <div class="avatar-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <div class="avatar-text">
+                                <span class="avatar-name">Артем Чудин</span>
+                                <span class="avatar-title">Тимлид & Full-stack</span>
+                            </div>
+                        </div>
+                        <div class="member-badge leader-badge">
+                            <i class="fas fa-star"></i> Тимлид
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <div class="member-header">
+                            <h3>Артем Чудин</h3>
+                            <div class="member-social">
+                                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <p class="member-title">Основатель и технический директор</p>
+                        <p class="member-bio">Объединяет аналитический подход Fish с динамикой Meat. Отвечает за архитектуру проектов, стратегию развития и координацию команды. Имеет 8-летний опыт в разработке сложных систем.</p>
+                        
+                        <div class="member-stats">
+                            <div class="member-stat">
+                                <div class="stat-value">8 лет</div>
+                                <div class="stat-label">в разработке</div>
+                            </div>
+                            <div class="member-stat">
+                                <div class="stat-value">100+</div>
+                                <div class="stat-label">проектов</div>
+                            </div>
+                            <div class="member-stat">
+                                <div class="stat-value">15</div>
+                                <div class="stat-label">команд</div>
+                            </div>
+                        </div>
+                        
+                        <div class="member-skills">
+                            <h4>Ключевые навыки:</h4>
+                            <div class="skills-list">
+                                <span class="skill-tag expert">Python</span>
+                                <span class="skill-tag expert">Node.js</span>
+                                <span class="skill-tag advanced">Архитектура</span>
+                                <span class="skill-tag expert">Leadership</span>
+                                <span class="skill-tag advanced">DevOps</span>
+                                <span class="skill-tag intermediate">Machine Learning</span>
+                            </div>
+                        </div>
+                        
+                        <div class="member-quote">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p>"Моя задача - найти баланс между глубиной анализа и скоростью реализации. Каждый проект - это уникальное сочетание Fish и Meat подходов, и именно в этом балансе рождается идеальное решение."</p>
+                        </div>
+                        
+                        <div class="member-contact">
+                            <a href="mailto:artem@fishmeat.studio" class="btn btn-outline btn-small">
+                                <i class="fas fa-envelope"></i> Написать Артему
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Артур Любин - Backend -->
+                <div class="team-member meat-member">
+                    <div class="member-photo">
+                        <div class="photo-placeholder meat-placeholder">
+                            <div class="avatar-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="avatar-text">
+                                <span class="avatar-name">Артур Любин</span>
+                                <span class="avatar-title">Backend Developer</span>
+                            </div>
+                        </div>
+                        <div class="member-badge meat-badge">
+                            <i class="fas fa-drumstick-bite"></i> Meat эксперт
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <div class="member-header">
+                            <h3>Артур Любин</h3>
+                            <div class="member-social">
+                                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                                <a href="#" aria-label="Stack Overflow"><i class="fab fa-stack-overflow"></i></a>
+                            </div>
+                        </div>
+                        <p class="member-title">Специалист по серверной логике</p>
+                        <p class="member-bio">Наш "Meat" эксперт. Специализируется на быстрой и эффективной реализации сложной логики. Любит оптимизировать и ускорять процессы. Отвечает за производительность и масштабируемость систем.</p>
+                        
+                        <div class="member-stats">
+                            <div class="member-stat">
+                                <div class="stat-value">5 лет</div>
+                                <div class="stat-label">в backend</div>
+                            </div>
+                            <div class="member-stat">
+                                <div class="stat-value">30+</div>
+                                <div class="stat-label">ботов</div>
+                            </div>
+                            <div class="member-stat">
+                                <div class="stat-value">99.9%</div>
+                                <div class="stat-label">uptime</div>
+                            </div>
+                        </div>
+                        
+                        <div class="member-skills">
+                            <h4>Ключевые навыки:</h4>
+                            <div class="skills-list">
+                                <span class="skill-tag expert">Python</span>
+                                <span class="skill-tag expert">Django</span>
+                                <span class="skill-tag advanced">API Design</span>
+                                <span class="skill-tag expert">Базы данных</span>
+                                <span class="skill-tag advanced">Microservices</span>
+                                <span class="skill-tag intermediate">Docker</span>
+                            </div>
+                        </div>
+                        
+                        <div class="member-quote">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p>"Моя философия - быстрая и качественная реализация. Как качественное мясо дает энергию, так и мой код дает мощь проекту. Я верю, что лучший код - это работающий код."</p>
+                        </div>
+                        
+                        <div class="member-contact">
+                            <a href="mailto:arthur@fishmeat.studio" class="btn btn-outline btn-small">
+                                <i class="fas fa-envelope"></i> Написать Артуру
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Калединов Андрей - Frontend -->
+                <div class="team-member fish-member">
+                    <div class="member-photo">
+                        <div class="photo-placeholder fish-placeholder">
+                            <div class="avatar-icon">
+                                <i class="fas fa-water"></i>
+                            </div>
+                            <div class="avatar-text">
+                                <span class="avatar-name">Андрей Калединов</span>
+                                <span class="avatar-title">Frontend & UX/UI</span>
+                            </div>
+                        </div>
+                        <div class="member-badge fish-badge">
+                            <i class="fas fa-fish"></i> Fish эксперт
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <div class="member-header">
+                            <h3>Андрей Калединов</h3>
+                            <div class="member-social">
+                                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                                <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                            </div>
+                        </div>
+                        <p class="member-title">Специалист по интерфейсам и UX</p>
+                        <p class="member-bio">Наш "Fish" эксперт. Погружается в потребности пользователей, создает интуитивные интерфейсы. Анализирует поведение и оптимизирует UX. Отвечает за удобство и эстетику всех наших продуктов.</p>
+                        
+                        <div class="member-stats">
+                            <div class="member-stat">
+                                <div class="stat-value">6 лет</div>
+                                <div class="stat-label">во frontend</div>
+                            </div>
+                            <div class="member-stat">
+                                <div class="stat-value">50+</div>
+                                <div class="stat-label">интерфейсов</div>
+                            </div>
+                            <div class="member-stat">
+                                <div class="stat-value">95%</div>
+                                <div class="stat-label">NPS score</div>
+                            </div>
+                        </div>
+                        
+                        <div class="member-skills">
+                            <h4>Ключевые навыки:</h4>
+                            <div class="skills-list">
+                                <span class="skill-tag expert">HTML/CSS</span>
+                                <span class="skill-tag expert">JavaScript</span>
+                                <span class="skill-tag advanced">UI/UX Design</span>
+                                <span class="skill-tag expert">Аналитика</span>
+                                <span class="skill-tag advanced">React</span>
+                                <span class="skill-tag intermediate">Figma</span>
+                            </div>
+                        </div>
+                        
+                        <div class="member-quote">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p>"Я как рыба погружаюсь в океан пользовательских потребностей. Мой подход - глубокий анализ перед каждым решением. Интерфейс должен быть не просто красивым, но и понятным для каждого пользователя."</p>
+                        </div>
+                        
+                        <div class="member-contact">
+                            <a href="mailto:andrey@fishmeat.studio" class="btn btn-outline btn-small">
+                                <i class="fas fa-envelope"></i> Написать Андрею
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Емельянов Павел - Full-stack -->
+                <div class="team-member hybrid-member">
+                    <div class="member-photo">
+                        <div class="photo-placeholder hybrid-placeholder">
+                            <div class="avatar-icon">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <div class="avatar-text">
+                                <span class="avatar-name">Павел Емельянов</span>
+                                <span class="avatar-title">Full-stack Developer</span>
+                            </div>
+                        </div>
+                        <div class="member-badge hybrid-badge">
+                            <i class="fas fa-sync-alt"></i> Гибридный эксперт
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <div class="member-header">
+                            <h3>Павел Емельянов</h3>
+                            <div class="member-social">
+                                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                                <a href="#" aria-label="Codepen"><i class="fab fa-codepen"></i></a>
+                            </div>
+                        </div>
+                        <p class="member-title">Full-stack разработчик</p>
+                        <p class="member-bio">Универсальный специалист, который одинаково хорошо разбирается и в backend, и во frontend. Быстро переключается между задачами, обеспечивая целостность проекта от идеи до реализации.</p>
+                        
+                        <div class="member-stats">
+                            <div class="member-stat">
+                                <div class="stat-value">4 года</div>
+                                <div class="stat-label">в разработке</div>
+                            </div>
+                            <div class="member-stat">
+                                <div class="stat-value">25+</div>
+                                <div class="stat-label">проектов</div>
+                            </div>
+                            <div class="member-stat">
+                                <div class="stat-value">10+</div>
+                                <div class="stat-label">технологий</div>
+                            </div>
+                        </div>
+                        
+                        <div class="member-skills">
+                            <h4>Ключевые навыки:</h4>
+                            <div class="skills-list">
+                                <span class="skill-tag advanced">JavaScript</span>
+                                <span class="skill-tag advanced">PHP</span>
+                                <span class="skill-tag expert">Full-stack</span>
+                                <span class="skill-tag advanced">API Integration</span>
+                                <span class="skill-tag intermediate">DevOps</span>
+                                <span class="skill-tag intermediate">Testing</span>
+                            </div>
+                        </div>
+                        
+                        <div class="member-quote">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p>"Моя сила - в гибкости. Я могу погрузиться в анализ данных, а затем быстро переключиться на создание интерфейса. Это позволяет видеть проект целиком и находить оптимальные решения."</p>
+                        </div>
+                        
+                        <div class="member-contact">
+                            <a href="mailto:pavel@fishmeat.studio" class="btn btn-outline btn-small">
+                                <i class="fas fa-envelope"></i> Написать Павлу
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Лупой Алексей - QA & DevOps -->
+                <div class="team-member support-member">
+                    <div class="member-photo">
+                        <div class="photo-placeholder support-placeholder">
+                            <div class="avatar-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="avatar-text">
+                                <span class="avatar-name">Алексей Лупой</span>
+                                <span class="avatar-title">QA & DevOps Engineer</span>
+                            </div>
+                        </div>
+                        <div class="member-badge support-badge">
+                            <i class="fas fa-shield-alt"></i> QA & DevOps
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <div class="member-header">
+                            <h3>Алексей Лупой</h3>
+                            <div class="member-social">
+                                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                                <a href="#" aria-label="Docker"><i class="fab fa-docker"></i></a>
+                            </div>
+                        </div>
+                        <p class="member-title">Инженер по качеству и DevOps</p>
+                        <p class="member-bio">Отвечает за надежность и безопасность наших решений. Тестирует каждый проект, настраивает процессы развертывания и мониторинга. Его девиз: "Работает не просто хорошо, а идеально."</p>
+                        
+                        <div class="member-stats">
+                            <div class="member-stat">
+                                <div class="stat-value">3 года</div>
+                                <div class="stat-label">в QA & DevOps</div>
+                            </div>
+                            <div class="member-stat">
+                                <div class="stat-value">100%</div>
+                                <div class="stat-label">тестирование</div>
+                            </div>
+                            <div class="member-stat">
+                                <div class="stat-value">0</div>
+                                <div class="stat-label">критических сбоев</div>
+                            </div>
+                        </div>
+                        
+                        <div class="member-skills">
+                            <h4>Ключевые навыки:</h4>
+                            <div class="skills-list">
+                                <span class="skill-tag expert">Testing</span>
+                                <span class="skill-tag advanced">DevOps</span>
+                                <span class="skill-tag expert">Security</span>
+                                <span class="skill-tag advanced">CI/CD</span>
+                                <span class="skill-tag intermediate">AWS</span>
+                                <span class="skill-tag intermediate">Docker</span>
+                            </div>
+                        </div>
+                        
+                        <div class="member-quote">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p>"Моя миссия - сделать каждый проект не просто работающим, а надежным и безопасным. Я проверяю каждый байт кода и каждое соединение, чтобы наши клиенты могли спать спокойно."</p>
+                        </div>
+                        
+                        <div class="member-contact">
+                            <a href="mailto:alexey@fishmeat.studio" class="btn btn-outline btn-small">
+                                <i class="fas fa-envelope"></i> Написать Алексею
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Процесс работы команды -->
+            <div class="team-process">
+                <h2 class="section-title">Как мы работаем вместе?</h2>
+                <div class="process-flow">
+                    <div class="flow-step">
+                        <div class="step-icon">
+                            <i class="fas fa-fish"></i>
+                            <span class="step-number">1</span>
+                        </div>
+                        <div class="step-content">
+                            <h3>Fish Phase (Анализ)</h3>
+                            <p>Андрей и Павел проводят глубокий анализ задачи, исследование пользователей, проектирование UX/UI</p>
+                            <div class="step-team">
+                                <span class="team-member-tag fish-tag">Андрей</span>
+                                <span class="team-member-tag hybrid-tag">Павел</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flow-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="step-icon">
+                            <i class="fas fa-sync-alt"></i>
+                            <span class="step-number">2</span>
+                        </div>
+                        <div class="step-content">
+                            <h3>Планирование (Координация)</h3>
+                            <p>Артем создает архитектуру, распределяет задачи между командой, устанавливает сроки и приоритеты</p>
+                            <div class="step-team">
+                                <span class="team-member-tag leader-tag">Артем</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flow-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="step-icon">
+                            <i class="fas fa-drumstick-bite"></i>
+                            <span class="step-number">3</span>
+                        </div>
+                        <div class="step-content">
+                            <h3>Meat Phase (Реализация)</h3>
+                            <p>Артур и Павел занимаются активной разработкой, Алексей подключается для тестирования и DevOps</p>
+                            <div class="step-team">
+                                <span class="team-member-tag meat-tag">Артур</span>
+                                <span class="team-member-tag hybrid-tag">Павел</span>
+                                <span class="team-member-tag support-tag">Алексей</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flow-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="step-icon">
+                            <i class="fas fa-rocket"></i>
+                            <span class="step-number">4</span>
+                        </div>
+                        <div class="step-content">
+                            <h3>Запуск и поддержка</h3>
+                            <p>Вся команда участвует в запуске проекта, Алексей обеспечивает мониторинг и поддержку</p>
+                            <div class="step-team">
+                                <span class="team-member-tag leader-tag">Артем</span>
+                                <span class="team-member-tag support-tag">Алексей</span>
+                                <span class="team-member-tag all-tag">Все</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ценности команды -->
+            <div class="team-values">
+                <h2 class="section-title">Наши ценности</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Прозрачность</h3>
+                        <p>Честность в общении с клиентами и внутри команды. Все процессы открыты и понятны.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Инновации</h3>
+                        <p>Постоянное обучение и внедрение новых технологий. Не боимся сложных задач.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Командная работа</h3>
+                        <p>Сила в разнообразии подходов. Каждый член команды вносит уникальный вклад.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h3>Качество</h3>
+                        <p>Не идем на компромиссы в качестве кода. Каждый проект - это наш флагман.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA секция -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Хотите работать с нашей командой?</h2>
+                <p>Присоединяйтесь к нам или закажите разработку бота у профессионалов</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-briefcase"></i> Заказать проект
+                    </a>
+                    <a href="mailto:careers@fishmeat.studio" class="btn btn-outline btn-large">
+                        <i class="fas fa-user-plus"></i> Присоединиться к команде
+                    </a>
+                </div>
+                <p class="cta-note">
+                    <i class="fas fa-users"></i> Работаем с 2021 года • 
+                    <i class="fas fa-trophy"></i> 50+ успешных проектов • 
+                    <i class="fas fa-heart"></i> Любим свое дело
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-fish"></i>
+                            <i class="fas fa-drumstick-bite"></i>
+                        </div>
+                        <span class="logo-text">Fish&Meat</span>
+                        <span class="logo-sub">Studio</span>
+                    </a>
+                    <p class="footer-tagline">Глубина анализа. Энергия реализации.</p>
+                    <p class="footer-description">Создаем умных Telegram-ботов для вашего бизнеса с 2021 года</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="portfolio.html">Портфолио</a></li>
+                        <li><a href="team.html">Команда</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h4>Услуги</h4>
+                    <ul>
+                        <li><a href="services.html#analytics">Аналитические боты</a></li>
+                        <li><a href="services.html#automation">Боты-автоматизаторы</a></li>
+                        <li><a href="services.html#ecommerce">Торговые боты</a></li>
+                        <li><a href="services.html#support">Поддержка</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Контакты</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p class="contact-label">Email</p>
+                            <a href="mailto:info@fishmeat.studio">info@fishmeat.studio</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <p class="contact-label">Телефон</p>
+                            <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p class="contact-label">Адрес</p>
+                            <p>г. Москва, ул. Разработчиков, 15</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://t.me/fishmeatstudio" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://github.com/fishmeatstudio" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://vk.com/fishmeatstudio" aria-label="VK">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@fishmeatstudio" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fish & Meat Studio. Все права защищены.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Политика конфиденциальности</a>
+                    <a href="terms.html">Пользовательское соглашение</a>
+                    <a href="sitemap.xml">Карта сайта</a>
+                </div>
+                <p class="made-with">
+                    Создано с <i class="fas fa-heart heart-icon" aria-hidden="true"></i> для вашего бизнеса
+                    <span class="version">v2.0.1</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/team.js"></script>
+</body>
+</html>
