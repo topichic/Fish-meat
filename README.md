@@ -106,13 +106,6 @@ Fish & Meat Studio - это веб-сайт визитка для студии �
     checkout main
     merge develop id: "Release v2.1"
     tag: "v2.1.0"
-```mermaid
-gitGraph
-    commit id: "Initial commit"
-    branch develop
-    checkout develop
-    commit id: "Add base structure"
-    
     branch feature/html-pages
     checkout feature/html-pages
     commit id: "Add index & services"
@@ -144,7 +137,6 @@ gitGraph
     tag: "v2.0.0"
     
 ```
----
 
 ## **Итоговое распределение работы:**
 
