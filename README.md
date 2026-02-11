@@ -59,55 +59,35 @@ Fish & Meat Studio - это веб-сайт визитка для студии �
 ## 📊 Git Workflow с 6 участниками
 
 ### Ветвление проекта:
-```mermaid  
-    branch feature/html-core
-    checkout feature/html-core
-    commit id: "Add index & services (Андрей)"
+
+```mermaid
+gitGraph
+    commit
+    branch develop
     checkout develop
-    merge feature/html-core
+    commit
     
-    branch feature/html-pages
-    checkout feature/html-pages
-    commit id: "Add portfolio & team (Павел)"
+    branch feature/MisakiAori
+    checkout feature/MisakiAori
+    commit
     checkout develop
-    merge feature/html-pages
+    merge feature/MisakiAori
     
-    branch feature/css-core
-    checkout feature/css-core
-    commit id: "Add main styles (Артур)"
+    branch feature/Pasha
+    checkout feature/Pasha
+    commit
     checkout develop
-    merge feature/css-core
+    merge feature/Pasha
     
-    branch feature/css-responsive
-    checkout feature/css-responsive
-    commit id: "Add responsive styles (Алексей)"
+    branch feature/arthurliubin
+    checkout feature/arthurliubin
+    commit
     checkout develop
-    merge feature/css-responsive
+    merge feature/arthurliubin
     
-    branch feature/js-core
-    checkout feature/js-core
-    commit id: "Add main scripts (Артем)"
-    checkout develop
-    merge feature/js-core
-    
-    branch feature/blog
-    checkout feature/blog
-    commit id: "Add blog page (Даниил)"
-    checkout develop
-    merge feature/blog
-    
-    branch feature/optimization
-    checkout feature/optimization
-    commit id: "Performance optimizations"
-    checkout develop
-    merge feature/optimization
-    
-    checkout main
-    merge develop id: "Release v2.1"
-    tag: "v2.1.0"
-    branch feature/html-pages
-    checkout feature/html-pages
-    commit id: "Add index & services"
+    branch feature/Aleksey
+    checkout feature/Aleksey
+    commit
     checkout develop
     merge feature/Aleksey
     
@@ -130,9 +110,7 @@ Fish & Meat Studio - это веб-сайт визитка для студии �
     merge feature/optimization
     
     checkout main
-    merge develop id: "Release v2.0"
-    tag: "v2.0.0"
-    
+    merge develop
 ```
 
 ## **Итоговое распределение работы:**
